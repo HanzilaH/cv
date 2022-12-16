@@ -1,4 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My jokes Application</title>
+	<style type="text/css">
+		.joke
+		{
+			font-family: Georgia, serif;
+			font-size: 25px;
+			letter-spacing: 2px;
+			word-spacing: 2px;
+			text-align: center;
+		}
 
+		.mybutton
+		{
+			box-shadow: 0px 10px 14px -7px #3e7327;
+			background: linear-gradient(to bottom, ##77b55a 5%, 72b352 100%);
+			background-color: #77b55a;
+			border: 1px solid #4b8f29;
+			display: inline-block;
+			cursor: pointer;
+			color: #ffffff;
+			font-family: Arial;
+			font-size: 13px;
+			font-weight: bold;
+			padding: 6px 12px;
+			text-shadow: 0px 1px 0px #5b8a3c;
+		}
+		.wrapper
+		{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function showAnswer()
+		{
+			answer = document.getElementById("answer")
+			answer.style.display = "block"
+		}
+	</script>
+
+
+</head>
+<body>
 <?php
 
 $curl = curl_init();
@@ -61,3 +107,5 @@ $response = json_decode($response, true);
 
 
 ?>
+</body>
+</html>
